@@ -3,7 +3,7 @@ package data.usecasesimplementation;
 import domain.entities.Currency;
 import domain.exceptions.CurrencyException;
 import domain.usecases.ICurrencyConverter;
-import infra.ICurrencyConversionRepository;
+import data.repositories.ICurrencyConversionRepository;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,10 @@
-package data.repositories;
+package infra;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import data.repositories.ICurrencyConversionRepository;
 import domain.entities.Currency;
 import domain.exceptions.ApiException;
-import infra.ICurrencyConversionRepository;
 
 import java.io.IOException;
 import java.net.URI;

@@ -1,11 +1,11 @@
 package core;
 
-import data.repositories.CurrencyConversionRepository;
+import infra.CurrencyConversionRepository;
 import data.usecasesimplementation.CurrencyConverter;
 import data.usecasesimplementation.RomanNumeralConverter;
 import domain.usecases.ICurrencyConverter;
 import domain.usecases.IRomanNumeralConverter;
-import infra.ICurrencyConversionRepository;
+import data.repositories.ICurrencyConversionRepository;
 import presentation.ConsoleController;
 import presentation.CurrencyConverterConsole;
 import presentation.RomanNumeralConsole;

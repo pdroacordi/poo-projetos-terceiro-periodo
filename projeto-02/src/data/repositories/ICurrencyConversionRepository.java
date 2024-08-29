@@ -1,4 +1,4 @@
-package infra;
+package data.repositories;
 
 import domain.entities.Currency;
 

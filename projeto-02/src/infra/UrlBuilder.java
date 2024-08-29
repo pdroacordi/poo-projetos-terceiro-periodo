@@ -1,4 +1,4 @@
-package data.repositories;
+package infra;
 
 public class UrlBuilder {
     private final String baseUrl;
