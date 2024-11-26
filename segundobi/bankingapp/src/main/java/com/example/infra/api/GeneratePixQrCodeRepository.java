@@ -27,7 +27,6 @@ public class GeneratePixQrCodeRepository implements IGenerateCelcoinPixQRCodeRep
     @Override
     public String getCelcoinPixQRCode(double amount) {
         String token = tokenRepository.getCelcoinToken();
-        System.out.println(token);
         HttpRequest httpRequest = HttpRequest.newBuilder()
                 .uri(URI.create("https://sandbox.openfinance.celcoin.dev/pix/v1/brcode/static"))
                 .header("authorization", "Bearer " + token)

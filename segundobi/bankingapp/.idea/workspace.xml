@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecbb04b-e822-46f0-8bba-e34d185730c0" name="Changes" comment="" />
+    <list default="true" id="2ecbb04b-e822-46f0-8bba-e34d185730c0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infra/api/GeneratePixQrCodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/api/GeneratePixQrCodeRepository.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +70,8 @@
       <workItem from="1732054210527" duration="8154000" />
       <workItem from="1732233740649" duration="735000" />
       <workItem from="1732623877706" duration="11167000" />
+      <workItem from="1732635152896" duration="82000" />
+      <workItem from="1732658597746" duration="153000" />
     </task>
     <servers />
   </component>
