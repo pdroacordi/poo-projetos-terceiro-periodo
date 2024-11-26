@@ -4,54 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ecbb04b-e822-46f0-8bba-e34d185730c0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/protocols/api/IConsultCelcoinBillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/protocols/api/IGenerateCelcoinPixQRCodeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/protocols/api/IGenerateCelcoinTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/protocols/api/IPayCelcoinBillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/protocols/database/IConnectToDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/usecasesimplementation/ConsultBills.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/usecasesimplementation/GeneratePixQrCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/data/usecasesimplementation/PayCelcoinBill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/BillsDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/BillsPaymentDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/PixDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/entities/BarCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/entities/Merchant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/exceptions/ApiException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/exceptions/DatabaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/usecases/IConsultBills.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/usecases/IGeneratePixQrCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/usecases/IPayCelcoinBill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/api/ConsultCelcoinBillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/api/GenerateCelcoinTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/api/GeneratePixQrCodeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/api/PayCelcoinBillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/database/postgres/PostgresAccountDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/celcoin/ConsultBillsRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/celcoin/GenerateCelcoinPixQrCodeRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/celcoin/GenerateCelcoinTokenRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/celcoin/PayCelcoinBillsRepositoryFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/database/postgres/PostgresAccountRepositoriesUnitOfWork.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/ConsultBillsFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/GenerateCelcoinPixQrCodeFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/PayCelcoinBillsFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/LoginDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/LoginDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/UserAccountDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/dto/UserAccountDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/domain/entities/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/domain/entities/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infra/database/testdb/InMemoryAccountDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/database/testdb/InMemoryAccountDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/infra/utils/mappers/AccountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/infra/utils/mappers/AccountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/factories/interfaces/UserInterfaceConsoleFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/interfaces/UserInterfaceConsoleFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/factories/interfaces/UserInterfaceSwingFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/interfaces/UserInterfaceSwingFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/AccountRepositoriesUnitOfWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/repositories/database/testdb/TestAccountRepositoriesUnitOfWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/AuthenticateAccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/AuthenticateAccountFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/CreateAccountFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/main/factories/usecases/CreateAccountFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/presentation/console/UserInterfaceConsoleImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/presentation/console/UserInterfaceConsoleImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/presentation/swing/UserInterfaceSwingImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/presentation/swing/UserInterfaceSwingImplementation.java" afterDir="false" />
-    </list>
+    <list default="true" id="2ecbb04b-e822-46f0-8bba-e34d185730c0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,7 +66,7 @@
       <workItem from="1730327407280" duration="21290000" />
       <workItem from="1732054210527" duration="8154000" />
       <workItem from="1732233740649" duration="735000" />
-      <workItem from="1732623877706" duration="10946000" />
+      <workItem from="1732623877706" duration="11167000" />
     </task>
     <servers />
   </component>
