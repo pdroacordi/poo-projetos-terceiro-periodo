@@ -13,24 +13,15 @@ public class Account {
     private LocalDateTime createdAt;
     private LocalDateTime disableAt;
 
-    public Account(Integer id, String document, String password, String name, String email, String accountNumber) {
-        this.id = id;
-        this.document = document;
-        this.password = password;
-        this.name = name;
-        this.email = email;
-        this.accountNumber = accountNumber;
-    }
-
-    public Account(Integer id, String document, String password, String name, String email, String accountNumber, LocalDateTime createdAt, LocalDateTime disableAt) {
-        this.id = id;
-        this.document = document;
-        this.password = password;
-        this.name = name;
-        this.email = email;
-        this.accountNumber = accountNumber;
-        this.createdAt = createdAt;
-        this.disableAt = disableAt;
+    private Account(AccountBuilder builder) {
+        this.id = builder.id;
+        this.document = builder.document;
+        this.password = builder.password;
+        this.name = builder.name;
+        this.email = builder.email;
+        this.accountNumber = builder.accountNumber;
+        this.createdAt = builder.createdAt;
+        this.disableAt = builder.disableAt;
     }
 
     public Integer getId() {
@@ -69,5 +60,63 @@ public class Account {
         this.disableAt = disableAt;
     }
 
+    public static class AccountBuilder {
+        private Integer id;
+        private String document;
+        private String password;
+        private String name;
+        private String email;
+        private String accountNumber;
+        private LocalDateTime createdAt;
+        private LocalDateTime disableAt;
+
+        public AccountBuilder() {
+            // Default constructor
+        }
+
+        public AccountBuilder setId(Integer id) {
+            this.id = id;
+            return this;
+        }
+
+        public AccountBuilder setDocument(String document) {
+            this.document = document;
+            return this;
+        }
+
+        public AccountBuilder setPassword(String password) {
+            this.password = password;
+            return this;
+        }
+
+        public AccountBuilder setName(String name) {
+            this.name = name;
+            return this;
+        }
+
+        public AccountBuilder setEmail(String email) {
+            this.email = email;
+            return this;
+        }
+
+        public AccountBuilder setAccountNumber(String accountNumber) {
+            this.accountNumber = accountNumber;
+            return this;
+        }
+
+        public AccountBuilder setCreatedAt(LocalDateTime createdAt) {
+            this.createdAt = createdAt;
+            return this;
+        }
+
+        public AccountBuilder setDisableAt(LocalDateTime disableAt) {
+            this.disableAt = disableAt;
+            return this;
+        }
+
+        public Account build() {
+            return new Account(this);
+        }
+    }
 
 }

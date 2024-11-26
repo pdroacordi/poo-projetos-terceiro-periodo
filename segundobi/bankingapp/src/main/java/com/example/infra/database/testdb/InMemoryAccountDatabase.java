@@ -25,7 +25,7 @@ public class InMemoryAccountDatabase implements ICreateUserAccountRepository, IF
     @Override
     public Account createUserAccount(UserAccountDTO userAccountDTO) {
         if( findUserByEmail(userAccountDTO.getEmail()) != null ) throw new ExistentRecordException("Já existe uma conta cadastrada com este e-mail");
-        if( findUserByDocument(userAccountDTO.getDocument()) != null ) throw new ExistentRecordException("Já existe uma conta cadastrada com este e-mail");
+        if( findUserByDocument(userAccountDTO.getDocument()) != null ) throw new ExistentRecordException("Já existe uma conta cadastrada com este documento");
 
         userAccountDTO.setAccountNumber(generateAccountNumberWithCheckDigits());
         userAccountDTO.setCreatedAt(LocalDateTime.now());

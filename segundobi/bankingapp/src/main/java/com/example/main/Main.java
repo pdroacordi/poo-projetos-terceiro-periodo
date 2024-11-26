@@ -12,19 +12,31 @@ public class Main {
         int selected = JOptionPane.showOptionDialog(null,
                 "Como você deseja ver o sistema?",
                 "Visualização",
-                0,
-                3,
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
                 null,
                 options,
                 options[0]
         );
+
+        String[] databases = {"Salvar em Memória", "Persistir (Banco de Dados)"};
+        int database = JOptionPane.showOptionDialog(null,
+                "Como você deseja que os dados sejam salvos?",
+                "Dados",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                databases,
+                databases[0]
+        );
+
         IUserInterface userInterface = null;
         switch (selected){
             case 0:
-                userInterface = UserInterfaceConsoleFactory.makeConsoleUserInterface();
+                userInterface = UserInterfaceConsoleFactory.makeConsoleUserInterface(database);
                 break;
             case 1:
-                userInterface = UserInterfaceSwingFactory.makeSwingUserInterface();
+                userInterface = UserInterfaceSwingFactory.makeSwingUserInterface(database);
                 break;
         }
         userInterface.start();

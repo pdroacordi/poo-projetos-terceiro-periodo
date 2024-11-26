@@ -1,11 +1,11 @@
-package com.example.main.factories.repositories;
+package com.example.main.factories.repositories.database.testdb;
 
 import com.example.data.protocols.database.ICreateUserAccountRepository;
 import com.example.data.protocols.database.IFindUserByDocumentRepository;
 import com.example.data.protocols.database.IFindUserByEmailRepository;
 import com.example.infra.database.testdb.InMemoryAccountDatabase;
 
-public class AccountRepositoriesUnitOfWork {
+public class TestAccountRepositoriesUnitOfWork {
     private static final InMemoryAccountDatabase inMemoryAccountDatabase = new InMemoryAccountDatabase();
 
     public static ICreateUserAccountRepository getCreateUserAccountRepository() {
@@ -20,7 +20,4 @@ public class AccountRepositoriesUnitOfWork {
         return inMemoryAccountDatabase;
     }
 
-    public static ICreateUserAccountRepository createUserAccountRepository() {
-        return inMemoryAccountDatabase;
-    }
 }

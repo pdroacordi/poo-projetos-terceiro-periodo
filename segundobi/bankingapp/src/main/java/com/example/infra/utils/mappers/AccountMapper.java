@@ -6,15 +6,16 @@ import com.example.domain.entities.Account;
 public class AccountMapper {
 
     public static Account userAccountDTOtoAccount(UserAccountDTO dto){
-        return new Account(dto.getId(),
-                dto.getDocument(),
-                dto.getPassword(),
-                dto.getName(),
-                dto.getEmail(),
-                dto.getAccountNumber(),
-                dto.getCreatedAt(),
-                dto.getDisableAt()
-        );
+        return new Account.AccountBuilder()
+                .setId(dto.getId())
+                .setDocument(dto.getDocument())
+                .setName(dto.getName())
+                .setEmail(dto.getEmail())
+                .setPassword(dto.getPassword())
+                .setAccountNumber(dto.getAccountNumber())
+                .setCreatedAt(dto.getCreatedAt())
+                .setDisableAt(dto.getDisableAt())
+                .build();
     }
 
 }
